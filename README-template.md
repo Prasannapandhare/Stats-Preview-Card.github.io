@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live Server URL](https://your-live-site-url.com)
+- Live Site URL: [Live Server URL](https://prasannapandhare.github.io/Stats-Preview-Card.github.io/)
 
 ## My process
 

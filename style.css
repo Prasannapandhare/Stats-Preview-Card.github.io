@@ -1,0 +1,278 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 400, 700;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card {
+    height: 60%;
+    width: 1440px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.content {
+    width: 60%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.back {
+    width: 40%;
+    height: 100%;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    color: transparent;
+}
+
+.back::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(277, 64%, 61%, 70%);
+    z-index: 0;
+}
+
+.head {
+    display: flex;
+    color: white;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 380%;
+    font-weight: bolder;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.para {
+    padding-right: 20%;
+    padding-top: 5%;
+    font-size: 140%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.tag {
+    color: white;
+    display: flex;
+    padding-top: 10%;
+    padding-right: 25%;
+    justify-content: space-between;
+}
+
+.num {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: bolder;
+    font-size: 130%;
+}
+
+.name {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+
+@media screen and (width<=526px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 375px;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90%;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    .para {
+        padding-top: 20%;
+        padding-bottom: -15%;
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10%;
+        padding-top: 0%;
+    }
+
+    .back {
+        width: 100%;
+        height: 40%;
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .back p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+    }
+
+    .back::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsla(277, 64%, 61%, 70%);
+        z-index: 0;
+    }
+
+    .name {
+        padding-bottom: 20%;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 9px;
+    }
+}
+
+@media screen and (width<=375px) {
+
+    #wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        min-width: 375px;
+        height: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90%;
+        width: 90%;
+        border-radius: 15px;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-left: 20%;
+    }
+
+    .para {
+        padding-top: 20%;
+        padding-bottom: -15%;
+    }
+
+    .tag {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15%;
+        padding-top: 0%;
+    }
+
+    .name {
+        padding-bottom: 20%;
+    }
+
+    .back {
+        width: 100%;
+        height: 40%;
+        background-image: url(images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    .back p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
+    }
+
+    .back::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: hsla(277, 64%, 61%, 70%);
+        z-index: 0;
+    }
+
+    .attribution {
+        text-align: center;
+        font-size: 4px;
+    }
+
+}
